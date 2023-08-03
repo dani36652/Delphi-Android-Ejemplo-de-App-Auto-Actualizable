@@ -1,0 +1,4 @@
+Este ejemplo fue escrito con Delphi 11 Community Edition, pero puede ser facilmente adaptado a 
+versiones anteriores para hacer uso del FileProvider.
+Para ello recordar que: 
+El file provider en versiones anteriores se invoca como "TJFileProvider" y en el "manifestTemplate" se debe reemplazar la libreria de Androidx.core por la que contenga a FileProvider.
