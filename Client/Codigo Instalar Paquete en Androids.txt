@@ -1,0 +1,31 @@
+{$IFDEF ANDROID}
+var
+Intent:JIntent;
+Uri:JNet_Uri;
+arch:JFile;
+{$ENDIF}
+begin
+  if TFile.Exists(strFilePath) then
+  begin
+    {$IFDEF ANDROID}
+    arch:=TJFile.JavaClass.init(StringToJString(strFilePath));
+    arch.setReadable(true,false);
+    if TJBuild_VERSION.JavaClass.SDK_INT>=24 then
+    begin
+      Uri:=TJcontent_FileProvider.JavaClass.getUriForFile(TAndroidHelper.Context,
+      StringToJString(System.Concat(JStringToString(TAndroidHelper.Context.getPackageName),'.fileprovider')) ,
+      arch);
+    end else
+    begin
+      Uri:=TJnet_Uri.JavaClass.fromFile(arch);
+    end;
+    Intent:=TJIntent.Create;
+    intent.putExtra(TJIntent.JavaClass.EXTRA_NOT_UNKNOWN_SOURCE, true);
+    Intent.setAction(TJintent.JavaClass.ACTION_VIEW);
+    Intent.setDataAndType(Uri,StringToJString('application/vnd.android.package-archive'));
+    Intent.setFlags(TJIntent.JavaClass.FLAG_ACTIVITY_NEW_TASK);
+    intent.addFlags(TJIntent.JavaClass.FLAG_GRANT_READ_URI_PERMISSION);
+    TAndroidHelper.Context.startActivity(Intent);
+  {$ENDIF}
+  end;
+end;

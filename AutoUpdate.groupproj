@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{37278CE1-B866-4F96-8541-59B57828C62A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Server\UpdateServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\UpdateClient.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="UpdateServer">
+        <MSBuild Projects="Server\UpdateServer.dproj"/>
+    </Target>
+    <Target Name="UpdateServer:Clean">
+        <MSBuild Projects="Server\UpdateServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UpdateServer:Make">
+        <MSBuild Projects="Server\UpdateServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UpdateClient">
+        <MSBuild Projects="Client\UpdateClient.dproj"/>
+    </Target>
+    <Target Name="UpdateClient:Clean">
+        <MSBuild Projects="Client\UpdateClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UpdateClient:Make">
+        <MSBuild Projects="Client\UpdateClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="UpdateServer;UpdateClient"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="UpdateServer:Clean;UpdateClient:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="UpdateServer:Make;UpdateClient:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

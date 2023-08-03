@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/05/17 15:49:25.000.423,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2023/05/17 15:49:26.000.035,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:53:16.000.380,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:53:16.000.567,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\ServerConst1.pas</Transaction>
+    <Transaction>2023/05/17 16:54:36.000.653,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:54:36.000.417,=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:55:15.000.329,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UpdateServer.dproj=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2023/05/17 16:55:25.000.547,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\frmServer.fmx=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\FormUnit1.fmx</Transaction>
+    <Transaction>2023/05/17 16:55:25.000.547,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\frmServer.pas=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:55:44.000.007,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModule.pas=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2023/05/17 16:55:44.000.007,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModule.dfm=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.dfm</Transaction>
+    <Transaction>2023/05/17 16:56:01.000.684,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UPrincipal.fmx=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\frmServer.fmx</Transaction>
+    <Transaction>2023/05/17 16:56:01.000.684,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UPrincipal.pas=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\frmServer.pas</Transaction>
+    <Transaction>2023/05/17 16:57:10.000.972,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UPrincipal.fmx=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UPrincipal.fmx</Transaction>
+    <Transaction>2023/05/17 16:57:10.000.972,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UPrincipal.pas=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UPrincipal.pas</Transaction>
+    <Transaction>2023/05/17 16:57:13.000.483,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\WebModule.pas=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModule.pas</Transaction>
+    <Transaction>2023/05/17 16:57:13.000.483,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\WebModule.dfm=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\WebModule.dfm</Transaction>
+    <Transaction>2023/05/17 16:57:15.000.436,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateServer.dproj=C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\UpdateServer.dproj</Transaction>
+    <Transaction>2023/07/13 10:57:09.000.038,=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas</Transaction>
+    <Transaction>2023/07/13 11:09:21.000.123,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unidades\UServerActions.pas</Transaction>
+    <Transaction>2023/07/13 11:18:35.000.014,=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas</Transaction>
+    <Transaction>2023/07/13 11:22:30.000.256,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unidades\Generales.pas</Transaction>
+    <Transaction>2023/07/13 12:43:42.000.566,=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas</Transaction>
+    <Transaction>2023/07/13 12:45:42.000.915,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unit1.pas=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\Unidades\UJSONUtils.pas</Transaction>
+    <Transaction>2023/07/18 17:26:41.000.171,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateServer.dproj=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\ActuallizacionComanderaMovil.dproj</Transaction>
+    <Transaction>2023/08/03 17:30:49.000.725,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateAppServer.dproj=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\ActuallizacionComanderaMovil.dproj</Transaction>
+    <Transaction>2023/08/03 17:31:03.000.818,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateServer.dproj=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateAppServer.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

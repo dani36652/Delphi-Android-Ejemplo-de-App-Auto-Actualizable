@@ -1,0 +1,438 @@
+object Servidor: TServidor
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'Test-Update Android Version'
+  ClientHeight = 572
+  ClientWidth = 839
+  Fill.Kind = Solid
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object ContenedorPrincipal: TLayout
+    Align = Client
+    Size.Width = 839.000000000000000000
+    Size.Height = 572.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LYContAccionesServidor: TLayout
+      Align = Left
+      Size.Width = 250.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object EditPort: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Text = '52690'
+        TextSettings.Font.Size = 14.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 82.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+      end
+      object lblPuerto: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 55.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Puerto'
+        TabOrder = 2
+      end
+      object lblTituloServidor: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Top = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 250.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF353784
+        TextSettings.HorzAlign = Center
+        Text = 'Servidor'
+        TabOrder = 1
+      end
+      object LYBtnIniciar: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 114.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object RectIniciar: TRectangle
+          Align = Client
+          Fill.Color = xFF353784
+          HitTest = False
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 210.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object ButtonStart: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 210.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            TabOrder = 5
+            Text = 'Iniciar'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = ButtonStartClick
+          end
+        end
+      end
+      object LYBtnDetener: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 164.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object RectDetener: TRectangle
+          Align = Client
+          Fill.Color = xFF353784
+          HitTest = False
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 210.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object ButtonStop: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 210.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            TabOrder = 7
+            Text = 'Detener'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = ButtonStopClick
+          end
+        end
+      end
+      object LYBtnOpenBrowser: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 214.000000000000000000
+        Size.Width = 230.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        object RectOpenBrowser: TRectangle
+          Align = Client
+          Fill.Color = xFF353784
+          HitTest = False
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 210.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object ButtonOpenBrowser: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 210.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            TabOrder = 9
+            Text = 'Abrir en el navegador'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = ButtonOpenBrowserClick
+          end
+        end
+      end
+    end
+    object LYContInfoApp: TLayout
+      Align = Client
+      Size.Width = 589.000000000000000000
+      Size.Height = 572.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object lblTituloDetallesVersionActual: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Top = 15.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 589.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.FontColor = xFF353784
+        TextSettings.HorzAlign = Center
+        Text = 'Detalles de la versi'#243'n actual'
+        TabOrder = 1
+      end
+      object lblTituloNombreArchivo: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 55.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Nombre del archivo'
+        TabOrder = 2
+      end
+      object edtNombreArchivo: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        ReadOnly = True
+        TextSettings.Font.Size = 14.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 82.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+        OnChangeTracking = edtNombreArchivoChangeTracking
+      end
+      object lblTituloVersion: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 114.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Versi'#243'n'
+        TabOrder = 4
+      end
+      object edtVersion: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 5
+        FilterChar = '0123456789.'
+        TextSettings.Font.Size = 14.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 141.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        StyledSettings = [Family]
+        OnChangeTracking = edtNombreArchivoChangeTracking
+      end
+      object lblTituloNotasVersion: TLabel
+        Align = Top
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 173.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 17.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Notas de la versi'#243'n'
+        TabOrder = 6
+      end
+      object mmoNotasVersion: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Family, Style, FontColor]
+        TextSettings.Font.Size = 14.000000000000000000
+        OnChangeTracking = edtNombreArchivoChangeTracking
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 200.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 204.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Viewport.Width = 565.000000000000000000
+        Viewport.Height = 200.000000000000000000
+      end
+      object lblTituloAPK: TLabel
+        Align = Top
+        AutoSize = True
+        StyledSettings = [Family]
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 414.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        Text = 'Android Application Package (APK)'
+        TabOrder = 9
+      end
+      object LYContDatosArchivo: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 446.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        object edtRutaArchivo: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 13
+          ReadOnly = True
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 464.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Ruta del archivo'
+          StyledSettings = [Family, Style, FontColor]
+          OnChangeTracking = edtNombreArchivoChangeTracking
+        end
+        object rectCargarArchivo: TRectangle
+          Align = Right
+          Fill.Color = xFF353784
+          HitTest = False
+          Margins.Top = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 469.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 100.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object btnCargarArchivo: TButton
+            Align = Client
+            StyledSettings = [Family]
+            Size.Width = 100.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            TabOrder = 14
+            Text = 'Cargar archivo'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = btnCargarArchivoClick
+          end
+        end
+      end
+      object Layout1: TLayout
+        Align = Top
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 501.000000000000000000
+        Size.Width = 569.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        object rectBtnGuardar: TRectangle
+          Align = Center
+          Fill.Color = xFF353784
+          HitTest = False
+          Margins.Top = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Size.Width = 319.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 5.000000000000000000
+          YRadius = 5.000000000000000000
+          object btnGuardar: TButton
+            Align = Client
+            Enabled = False
+            StyledSettings = [Family]
+            Size.Width = 319.000000000000000000
+            Size.Height = 34.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'speedbuttonstyle'
+            TabOrder = 16
+            Text = 'Guardar'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = btnGuardarClick
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/07/13 13:52:53.000.920,C:\Users\drodriguez\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\ProjectGroup1.groupproj</Transaction>
+    <Transaction>2023/07/13 13:53:11.000.214,C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\ProjectGroup1.groupproj=C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\AutoUpdate.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\drodriguez\Desktop\Pruebas_Desarrollos\PruebaUpdateApp\Server\UpdateServer.dproj"/>
+	</Default.Personality>
+</BorlandProject>
